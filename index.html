@@ -306,45 +306,119 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Contáctanos</h2>
-                <p class="section-subtitle">Estamos aquí para ayudarte</p>
+                <p class="section-subtitle">¿Tienes preguntas? Estamos aquí para ayudarte</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Ministerio de Tecnologías de la Información y las Comunicaciones</h3>
+                    <h3>Información de Contacto</h3>
+                    <p class="contact-intro">Comunícate con nosotros a través de cualquiera de estos medios o completa
+                        el formulario y te responderemos a la brevedad.</p>
+
                     <div class="contact-item">
-                        <strong>Dirección:</strong>
-                        <p>Edificio Murillo Toro<br>Cra. 8a entre calles 12A y 12B<br>Bogotá, Colombia – Código Postal
-                            111711</p>
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Dirección</strong>
+                            <p>Edificio Murillo Toro<br>Cra. 8a entre calles 12A y 12B<br>Bogotá, Colombia – CP 111711
+                            </p>
+                        </div>
                     </div>
+
                     <div class="contact-item">
-                        <strong>Teléfonos:</strong>
-                        <p>Conmutador: <a href="tel:6013443460">+57 601 344 34 60</a></p>
-                        <p>Línea Gratuita: <a href="tel:018000914014">01-800-0914014</a></p>
-                        <p>Línea Anticorrupción: <a href="tel:018000912667">01-800-0912667</a></p>
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Teléfonos</strong>
+                            <p><a href="tel:6013443460">+57 601 344 34 60</a></p>
+                            <p><a href="tel:018000914014">01-800-0914014</a> (Línea Gratuita)</p>
+                        </div>
                     </div>
+
                     <div class="contact-item">
-                        <strong>Correos Electrónicos:</strong>
-                        <p>Institucional: <a href="mailto:minticresponde@mintic.gov.co">minticresponde@mintic.gov.co</a>
-                        </p>
-                        <p>Denuncias: <a href="mailto:soytransparente@mintic.gov.co">soytransparente@mintic.gov.co</a>
-                        </p>
-                        <p>Notificaciones Judiciales: <a
-                                href="mailto:notificacionesjudicialesmintic@mintic.gov.co">notificacionesjudicialesmintic@mintic.gov.co</a>
-                        </p>
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:minticresponde@mintic.gov.co">minticresponde@mintic.gov.co</a></p>
+                        </div>
                     </div>
+
                     <div class="contact-item">
-                        <strong>Horario de Atención Presencial:</strong>
-                        <p>Lunes a viernes de 8:30 a.m. – 4:30 p.m.<br>Jornada Continua</p>
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <strong>Horario de Atención</strong>
+                            <p>Lunes a viernes<br>8:30 a.m. – 4:30 p.m.</p>
+                        </div>
+                    </div>
+
+                    <div class="inscription-cta">
+                        <h4>¿Listo para inscribirte?</h4>
+                        <p>Accede directamente al formulario oficial de inscripción</p>
+                        <a href="https://forms.zohopublic.com/talentotechoriente6/form/Inscripcin/formperma/j2DUxhOo3o6rOagMB4K_hXDFyM-RVMnN8rBWLLvrqlU"
+                            target="_blank" class="btn btn-primary btn-large">Formulario de Inscripción</a>
                     </div>
                 </div>
+
                 <div class="contact-form-container">
-                    <div class="inscription-box">
-                        <h3>¿Listo para comenzar?</h3>
-                        <p>Completa el formulario de inscripción y da el primer paso hacia tu futuro digital.</p>
-                        <a href="https://forms.zohopublic.com/talentotechoriente6/form/Inscripcin/formperma/j2DUxhOo3o6rOagMB4K_hXDFyM-RVMnN8rBWLLvrqlU"
-                            target="_blank" class="btn btn-primary btn-large">Inscríbete Ahora</a>
-                        <p class="inscription-note">O usa nuestro chatbot para resolver tus dudas primero</p>
-                    </div>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mrbwnpal" method="POST">
+                        <h3>Envíanos un Mensaje</h3>
+                        <p class="form-description">Completa el formulario y nos pondremos en contacto contigo</p>
+
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ej: Juan Pérez">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="300 123 4567">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Programa de Interés</label>
+                            <select id="program" name="program">
+                                <option value="">Selecciona un programa</option>
+                                <option value="fullstack">Programación Web Full Stack</option>
+                                <option value="ia">Inteligencia Artificial</option>
+                                <option value="blockchain">Blockchain</option>
+                                <option value="datos">Análisis de Datos</option>
+                                <option value="cloud">Arquitectura en la Nube</option>
+                                <option value="ciberseguridad">Ciberseguridad</option>
+                                <option value="otro">Otro / Información General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span>Acepto la <a
+                                        href="https://www.talentotechoriente.com/wp-content/uploads/2024/08/POLITICA-DE-TRATAMIENTO-DE-BASE-DE-DATOS-TTO-.docx.pdf"
+                                        target="_blank">política de tratamiento de datos</a> *</span>
+                            </label>
+                            <span class="error-message" id="privacyError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-submit">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <span class="btn-loader"></span>
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -365,6 +439,7 @@
                         <li><a href="#beneficios">Beneficios</a></li>
                         <li><a href="#proceso">Proceso</a></li>
                         <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
